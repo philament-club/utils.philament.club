@@ -1,0 +1,11 @@
+#!/bin/sh
+
+. ./_200-headers.sh
+
+echo '# pwgen -Bsy 64 32'
+echo
+
+/usr/bin/pwgen -Bsy 64 32
+
+echo
+echo "#-- Thanks for your contribution to this server's PRNG entropy !"

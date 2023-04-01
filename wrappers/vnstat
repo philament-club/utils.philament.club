@@ -1,0 +1,13 @@
+#!/bin/sh
+
+echo 'Status: 200'
+echo 'Content-type: text/plain'
+echo
+
+IFACE="ens3"
+
+/usr/bin/vnstat # -i "$IFACE"
+# /usr/bin/vnstat --top
+echo && /usr/bin/vnstat --hoursgraph -i ens3
+echo && /usr/bin/vnstat --hoursgraph -i wg0
+# /usr/bin/vnstat --hours # -i "$IFACE"

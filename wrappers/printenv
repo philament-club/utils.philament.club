@@ -1,0 +1,5 @@
+#!/bin/sh
+
+. ./_200-headers.sh
+
+printenv | grep -vE '^(DAEMON|DOCUMENT_ROOT|FCGI|JOURNAL|INVOCATION|LOG|HOME|PATH|PWD|SCRIPT|SERVER|SYSTEM|USER)'  # sorry peeps 

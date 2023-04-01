@@ -1,0 +1,5 @@
+#!/bin/sh
+
+. ./_200-headers.sh
+
+echo ${REMOTE_ADDR}

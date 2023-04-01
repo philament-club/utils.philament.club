@@ -1,0 +1,8 @@
+#!/bin/sh
+
+. ./_200-headers.sh
+
+# -a : Choose from all databases, regardless of whether they are considered "offensive" or not
+# -e : Make the probability of choosing a fortune file equal to that of all other files
+
+/usr/games/fortune -ae

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+<head>
+  <meta charset="UTF-8" />
+  <title>utils @ philament.club</title>
+  <style>
+    body {
+	font-family: monospace;
+	background-color: #101014;
+	color: #aaa;
+	padding: 0 1em;
+	max-width: 72em;
+	margin: 0 auto;
+    }
+    h1 { color: #666 }
+    dt { margin: 1em 0; color: #eee}
+    dd { margin-bottom: 2em }
+    a { color: orange }
+    dt a:first-of-type { font-weight: bolder }
+    tt { background: #333; padding: .1em .4em; box-shadow: #000 0 0 2px; border: 1px solid #444; border-radius: 2px; font: inherit }
+  </style>
+<body>
+  <h1>misc utils & random unix command wrappers</h1>
+  <dl>
+    <dt>cat<i>?wrapper</i> [<a href='/u/cat?cat' aria-label='View the source of the "cat" script'>src</a>] &mdash; Web1.0 cgi-bin source "inspector", for your viewing pleasure.</dt>
+    <dd>Displays the source code of any <tt>/u/</tt> script (ie. <a href='u/cat?pwgen'>cat?pwgen</a> or <a href='u/cat?cat'>cat?cat</a>).</dd>
+    <dt><a href='/u/fortune'>fortune</a> [<a href='/u/cat?fortune' aria-label='View the source of the "fortune" wrapper'>src</a>] &mdash; Random "fortunes" from Un*x Land (<a href='https://en.wikipedia.org/wiki/Fortune_(Unix)'>consult Wikipedia if you're curious</a>)...</dt>
+    <dd><i>via</i> <tt>apt install fortunes fortunes-spam fortunes-off fortune-anarchism</tt> # might not be <abbr title='"Suitable for work", ie. some quotes might contain some "offensive shit"...'>sfw</a></dd>
+    <dt><a href='/u/ip'>ip</a> [<a href='/u/cat?ip' aria-label='View the source of the "ip" script'>src</a>] &mdash; Get your HTTP endpoint IP !</dt>
+    <dd>Returns the IP address of the connecting endpoint (<i>via</i> HTTP &rarr; might be inaccurate if you&rsquo;re behind a proxy).</dd>
+    <dt><a href='/u/ping'>ping</a> [<a href='/u/cat?ping' aria-label='View the source of the "ping" script'>src</a>] &mdash; <i>meh!</i></dt>
+    <dd>Echoes "pong" if no "undefined behaviour" happened on the wire.</dd>
+    <dt><a href='/u/printenv'>printenv</a> [<a href='/u/cat?printenv' aria-label='View the source of the "printenv" wrapper'>src</a>] [<a href='https://man7.org/linux/man-pages/man1/printenv.1.html'>man page</a>] &mdash;</dt>
+    <dd>Dumps the (filtered) environment variables of the CGI process handling your request...</dd>
+    <dt><a href='/u/pwgen'>pwgen</a> [<a href='/u/cat?pwgen' aria-label='View the source of the "pwgen" script'>src</a>] [<a href='https://linux.die.net/man/1/pwgen'>man page</a>] &mdash; Password generator.</dt>
+    <dd>This might be considered as an NFT source "in some future" <i>(sic!)</i>...</dd>
+    <dt><a href='/u/rig'>rig</a> [<a href='/u/cat?rig' aria-label='View the source of the "rig" wrapper'>src</a>] [<a href='https://www.mankier.com/1/rig'>man page</a>] &mdash; Random Identity Generator</dt>
+    <dd>Generates some random might-be-form-compliant-in-the-US address...</dd>
+  </dl>
+<!-- EOF -->
