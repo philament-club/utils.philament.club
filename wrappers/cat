@@ -2,4 +2,6 @@
 
 . ./_200-headers.sh
 
-/usr/bin/cat $(basename "${QUERY_STRING}")
+# Guillemets : nu, ?* faisait globber le dossier, et une requête sans argument laissait
+# cat lire son entrée standard. basename suffit à interdire la remontée de chemin.
+/usr/bin/cat "$(basename "${QUERY_STRING}")"
